@@ -18,16 +18,22 @@ QQ：134-7436-746    
     HTML5新元素(article、footer、header、nav、section/canvas、svg、video、audio/localStorage)等
     
 ### 2. CSS
-    CSS3选择器、背景和边框、文本效果、2D/3D 转换、动画
+    CSS3选择器、背景和边框、文本效果、2D/3D 转换、动画等
     
     固定布局、浮动布局、定位布局、流体布局、弹性布局。下一步我将学网格布局
     
     移动端常用rem
     
-    sass、less
+    习惯用sass
 
 ### 3. JavaScript
-      sj
+    ECMAScript、DOM、BOM
+    
+    对象、原型链、构造函数、作用域链、闭包、This
+    
+    js是我要深入学习的，下一步学ES6
+
+
 
 ## 工作经历
 
