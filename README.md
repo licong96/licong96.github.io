@@ -3,7 +3,7 @@
 ```
 姓名：黎聪      性别：男      年龄：21
 
-学历：专科      工作经验：1年半
+学历：专科      工作经验：1年6个月
 
 电话：136-9953-1996     
 
@@ -41,10 +41,12 @@ QQ：134-7436-746    
     Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI等
 
 ### 5. JS库
-    jQuery、Zepto、等100+
+    jQuery、Zepto、Hammer、ECharts、flexible等100+
     
 ### 6. JS框架
-    现在主要用VUE,
+    用过Angular1，现在主攻VUE
+    
+    常用：vue2 + vuex + vue-router + axios + webpack + sass + flex + iconfont
 
 
 
