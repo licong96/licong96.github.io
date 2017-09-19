@@ -53,7 +53,7 @@ QQ：134-7436-746    
 
     基础工具: Node.js、npm、yarn
 
-    构建工具：Webpack、Gulp、Fis3
+    构建工具：webpack、Gulp、Fis3
 
     版本管理：Git、GitHub
 
