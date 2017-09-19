@@ -15,7 +15,7 @@ QQ：134-7436-746    
 
 ## 专业技能
 ### 1. HTML 
-    HTML5新元素(article、footer、header、nav、section/canvas、svg、video、audio/localStorage)等
+    HTML5新元素(article、footer、header、nav、section/canvas、svg、video、audio)等
     
 ### 2. CSS
     CSS3选择器、背景和边框、文本效果、2D/3D 转换、动画等
@@ -29,9 +29,19 @@ QQ：134-7436-746    
 ### 3. JavaScript
     ECMAScript、DOM、BOM
     
-    对象、原型链、构造函数、作用域链、闭包、This
+    数据类型、操作符、控制语句、函数 
+    
+    对象、原型链、构造函数、作用域链、闭包、This
     
-    js是我要深入学习的，下一步学ES6
+    JSON、Ajax、Cookie、LocalStorage
+    
+    一直把js当学习重点，下一步学ES6
+    
+### 4. CSS UI框架
+    Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI等
+
+### 5. JS库
+    jQuery、Zepto、等100+
 
 
 
