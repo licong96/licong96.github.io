@@ -48,7 +48,14 @@ QQ：134-7436-746    
     
     常用：vue2 + vuex + vue-router + axios + webpack + sass + flex + iconfont
 
+### 7. 工具
+    编辑器：Atom、Sublime3
 
+    基础工具: Node.js、npm、yarn
+
+    构建工具：Webpack、Gulp、Fis3
+
+    版本管理：Git、GitHub
 
 ## 工作经历
 
