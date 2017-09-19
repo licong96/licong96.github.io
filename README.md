@@ -27,21 +27,21 @@ QQ：134-7436-746    
     习惯用sass
 
 ### 3. JavaScript
-    ECMAScript、DOM、BOM
-    
-    数据类型、操作符、控制语句、函数 
-    
-    对象、原型链、构造函数、作用域链、闭包、This
-    
-    JSON、Ajax、Cookie、LocalStorage
-    
-    一直把js当学习重点，下一步学ES6
+    ECMAScript、DOM、BOM
+
+    数据类型、操作符、控制语句、函数 
+
+    对象、原型链、构造函数、作用域链、闭包、This
+
+    JSON、Ajax、Cookie、LocalStorage
+
+    一直把js当学习重点，下一步学ES6
     
 ### 4. CSS UI框架
-    Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI等
+    Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI等
 
 ### 5. JS库
-    jQuery、Zepto、等100+
+    jQuery、Zepto、等100+
 
 
 
