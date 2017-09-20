@@ -1,4 +1,4 @@
-[点击这个，也可以访问简历](https://licong96.github.io/)
+[点击这个，也可以访问简历](https://licong96.github.io/) [或者查看PDF格式](https://github.com/licong96/licong96.github.io/blob/master/pdf.pdf)
 
 ## 个人信息  
 
