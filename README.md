@@ -78,12 +78,12 @@ QQ：134-7436-746    
 ## 个人作品
 > [移动端路演平台](http://new.my930.com/m/#/home) *如果是电脑打开，请使用Chrome浏览器按`F12`模拟手机
 
->> ![二维码，网络不畅可能会丢失](https://github.com/licong96/licong96.github.io/blob/master/mobile.png)
+>> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/mobile.png)
 
 
 > [项目列表展示](http://www.my930.com/my930/itemlist.html)
 
->> ![二维码，网络不畅可能会丢失](https://github.com/licong96/licong96.github.io/blob/master/item.png)
+>> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/item.png)
 
 以前的就不拿出来了，这两个也不是我最满意的，一直想做一个让自己有成就感的项目，在等这个机会
 
@@ -96,4 +96,3 @@ QQ：134-7436-746    
 ### [我的GitHub](https://github.com/licong96) 
 
 *如果访问GitHub慢，出现页面错乱，请刷新页面*
-![](https://raw.githubusercontent.com/licong96/licong96.github.io/master/mobile.png)
