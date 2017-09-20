@@ -96,3 +96,4 @@ QQ：134-7436-746    
 ### [我的GitHub](https://github.com/licong96) 
 
 *如果访问GitHub慢，出现页面错乱，请刷新页面*
+![](https://raw.githubusercontent.com/licong96/licong96.github.io/master/mobile.png)
