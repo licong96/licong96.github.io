@@ -1,4 +1,4 @@
-[可以点击这个，也可以访问简历](https://licong96.github.io/)
+[点击这个，也可以访问简历](https://licong96.github.io/)
 
 ## 个人信息  
 
