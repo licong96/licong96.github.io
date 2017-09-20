@@ -72,10 +72,16 @@ QQ：134-7436-746    
 >> 第二期改版开发的时候，考虑到之前的问题，所以我使用了Angular1代替jQuery。后面开发一个项目路演平台，根据项目具体的需求分析，决定了用vue，之后的项目也一直在用vue，用了就喜欢上了，等把vue吃透后，会再学其他框架。
 
 ## 个人作品
+以前的就不拿出来了，这两个也不是我最满意的，一直想做一个让自己有成就感的项目，在等这个机会
 
-[移动端路演平台](http://new.my930.com/m/#/home)
+> [移动端路演平台](http://new.my930.com/m/#/home) *如果是电脑打开，请使用Chrome浏览器按`F12`模拟手机
 
-[项目列表展示](http://www.my930.com/my930/itemlist.html)
+>> ![](https://github.com/licong96/licong96.github.io/blob/master/mobile.png)
+
+
+> [项目列表展示](http://www.my930.com/my930/itemlist.html)
+
+>> ![](https://github.com/licong96/licong96.github.io/blob/master/item.png)
 
 ## 兴趣爱好
 
