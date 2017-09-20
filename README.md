@@ -37,7 +37,7 @@ QQ：134-7436-746    
 
     JSON、Ajax、Cookie、LocalStorage
 
-    一直把js当学习重点，下一步深入学ES6
+    一直把js当学习重点，下一步深入学ES6
 
 ### 4. CSS UI框架
     Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI等
