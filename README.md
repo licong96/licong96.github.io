@@ -43,7 +43,7 @@ QQ：134-7436-746    
     Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI等
 
 ### 5. JS库
-    jQuery、Zepto、Hammer、ECharts、flexible等100+
+    jQuery、Zepto、Mock、Hammer、ECharts、flexible等100+
     
 ### 6. JS框架
     用过Angular1，现在主攻VUE
