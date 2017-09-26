@@ -91,6 +91,7 @@ QQ邮箱：1347436746@qq.com
 健身，因为工作性质会导致身体出现各种问题，所以，知道自己的不足而增强自身，这是我对自己的要求。其他爱好并不高雅，就不值一提了。
 
 - - - -
-### [我的GitHub](https://github.com/licong96) 
+### [我的GitHub](https://github.com/licong96)
+[https://github.com/licong96](https://github.com/licong96) 
 
 *如果访问GitHub慢，出现页面错乱，请刷新页面*
