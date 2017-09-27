@@ -17,10 +17,10 @@ QQ邮箱：1347436746@qq.com
 
 ## 专业技能
 ### 1. HTML 
-    HTML5新元素(header、nav、article、section、footer/canvas、svg、video、audio)表单控件等
+    HTML5新元素(header、nav、article、section、footer/canvas、svg、video、audio)表单控件...
     
 ### 2. CSS
-    CSS3选择器、盒子模型、Transition、Transform、Animation、Keyframes等
+    CSS3选择器、盒子模型、Transition、Transform、Animation、Keyframes...
     
     固定布局、浮动布局、定位布局、流体布局（媒体查询）、弹性布局
 
@@ -38,7 +38,7 @@ QQ邮箱：1347436746@qq.com
     JSON、Ajax、Cookie、LocalStorage、ES6常用语法
 
 ### 4. CSS UI框架
-    Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI等
+    Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI...
 
 ### 5. JS库
     jQuery、Zepto、Mock、Hammer、ECharts、flexible等100+
