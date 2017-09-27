@@ -1,4 +1,4 @@
-[点击这个，也可以访问简历](https://licong96.github.io/)
+主攻前端开发，涉及PC端、移动端、混合APP、微信程序
 
 ## 个人信息  
 
@@ -17,12 +17,12 @@ QQ邮箱：1347436746@qq.com
 
 ## 专业技能
 ### 1. HTML 
-    HTML5新元素(article、footer、header、nav、section/canvas、svg、video、audio)等
+    HTML5新元素(header、nav、article、section、footer/canvas、svg、video、audio)表单控件等
     
 ### 2. CSS
-    CSS3选择器、背景和边框、文本效果、2D/3D 转换、动画等
+    CSS3选择器、盒子模型、Transition、Transform、Animation、Keyframes等
     
-    固定布局、浮动布局、定位布局、流体布局、弹性布局。下一步我将学网格布局
+    固定布局、浮动布局、定位布局、流体布局、弹性布局
     
     移动端常用rem
     
