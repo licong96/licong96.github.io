@@ -35,13 +35,13 @@ QQ邮箱：1347436746@qq.com
 
     对象、原型链、构造函数、作用域链、闭包、This
 
-    JSON、Ajax、Cookie、LocalStorage、ES6常用语法
-
+    JSON、Ajax、Cookie、LocalStorage、ES6常用语法、插件开发、组件开发
+    
 ### 4. CSS UI框架
     Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI...
 
 ### 5. JS库
-    jQuery、Zepto、Mock、Hammer、ECharts、flexible等100+
+    jQuery、Zepto、Mock、Lodash、ECharts、flexible等100+
     
 ### 6. JS框架
     用过Angular1，现在主攻VUE
