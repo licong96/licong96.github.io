@@ -41,7 +41,7 @@ QQ邮箱：1347436746@qq.com
     Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI...
 
 ### 5. JS库
-    jQuery、Zepto、Mock、Lodash、ECharts、flexible等100+
+    jQuery、Zepto、Mock、Lodash、ECharts、flexible等100+
     
 ### 6. JS框架
     用过Angular1，现在主攻VUE
