@@ -74,14 +74,15 @@ QQ邮箱：1347436746@qq.com
 * 第二期改版开发的时候，考虑到之前的问题，所以我使用了Angular1代替jQuery。后面开发一个项目路演平台，根据项目具体的需求分析，决定了用vue，以及它的全家桶。
 
 ## 个人作品
-> [移动端路演平台](http://new.my930.com/m/#/home) *如果是电脑打开，请使用Chrome浏览器按`F12`模拟手机
-
->> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/mobile.png)
-
 
 > [项目列表展示](http://www.my930.com/my930/itemlist.html)
 
 >> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/item.png)
+
+> [移动端路演平台](http://new.my930.com/m/#/home) *如果是电脑打开，请使用Chrome浏览器按`F12`模拟手机
+
+>> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/mobile.png)
+
 
 以前的就不拿出来了，这两个也不是我最自豪的，一直想做一个让自己有成就感的项目，在等这个机会
 
