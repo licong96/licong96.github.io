@@ -84,17 +84,11 @@ QQ邮箱：1347436746@qq.com
 >> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/mobile.png)
 
 
-以前的就不拿出来了，这两个也不是我最自豪的，一直想做一个让自己有成就感的项目，在等这个机会
-
 ## 兴趣爱好
-已把编程当做爱好，代替了打游戏。
-
-健身，知道自己工作性质会导致身体问题，而增强自身，和知道自己不懂的知识要去学是一个道理，这个过程非常有成就感。
+保密
 
 ......
 
 - - - -
 ### [我的GitHub](https://github.com/licong96)
 [https://github.com/licong96](https://github.com/licong96) 
-
-*如果访问GitHub慢，出现页面错乱，请刷新页面*
