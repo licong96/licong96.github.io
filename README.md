@@ -75,7 +75,7 @@
 
 ## 个人作品
 
-> [项目列表展示](http://www.my930.com/my930/itemlist.html)
+> [项目列表展示](http://red.tianshic.com/women-wear-mall/#/list) *建议在微信上打开
 
 >> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/item.png)
 
