@@ -14,38 +14,38 @@
 
 
 ## 专业技能
-### 1. HTML 
+### 1. HTML
     熟悉HTML4.0标签的自带特性
-    
+
     HTML5语义化标签(header、nav、article、section、footer)、其他(canvas、svg、video、audio)表单控件...
-    
+
 ### 2. CSS
     盒子模型、CSS3新属性(border-radius、linear-gradient、Transition、Transform、Animation、Keyframes...)
-    
+
     掌握固定布局、浮动布局、定位布局、流体布局(媒体查询+百分比布局)、弹性布局
 
     移动端常用rem
-    
+
     习惯用sass
-    
-    遵从顺序编码规范 by @mdoc：1.Positioning 2.BoxModel 3.Typographic 4.Visual 
+
+    遵从顺序编码规范 by @mdoc：1.Positioning 2.BoxModel 3.Typographic 4.Visual
 
 ### 3. JavaScript
-    掌握数据类型、操作符、控制语句、函数 
+    掌握数据类型、操作符、控制语句、函数
 
     对象、原型链、构造函数、作用域链、闭包、This
 
     JSON、Ajax、Cookie、LocalStorage、ES6常用语法、Babel编译、JQ插件开发、组件开发
-    
+
 ### 4. CSS UI框架
     Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI...
 
 ### 5. JS库
     jQuery、Zepto、Store、Mock、Lodash、ECharts、flexible等100+
-    
+
 ### 6. JS框架
     用过Angular1，现在主攻VUE
-    
+
     常用：vue2 + vuex + vue-router + axios + webpack + sass + flex + iconfont
 
 ### 7. 用过的工具
@@ -75,9 +75,9 @@
 
 ## 个人作品
 
-> [项目列表展示](http://www.my930.com/my930/itemlist.html)
+> [微信上的女装商城，前端页面](http://red.tianshic.com/women-wear-mall/#/list)
 
->> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/item.png)
+>> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/women-wear-mall.png)
 
 > [移动端路演平台](http://new.my930.com/m/#/home) *如果是电脑打开，请使用Chrome浏览器按`F12`模拟手机
 
@@ -91,4 +91,4 @@
 
 - - - -
 ### [我的GitHub](https://github.com/licong96)
-[https://github.com/licong96](https://github.com/licong96) 
+[https://github.com/licong96](https://github.com/licong96)
