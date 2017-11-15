@@ -1,6 +1,6 @@
-专注前端开发，做过PC端、移动端、微信、hybrid开发
+专注前端开发，做过PC端、移动端、微信、hybrid开发（apicloud）
 
-核心技能：解决各种自适应布局，
+核心：解决各种自适应布局，完美还原设计图，js逻辑清晰，代码严谨，走eslint风格，面向对象开发插件，ES6语法，webpack打包
 
 ## 个人信息  
 
@@ -33,7 +33,7 @@
 
     对象、原型链、构造函数、作用域链、闭包、This
 
-    JSON、Ajax、Cookie、LocalStorage、ES6常用语法、插件开发、组件开发
+    JSON、Ajax、Cookie、LocalStorage、ES6常用语法、Babel编译、JQ插件开发、组件开发
     
 ### 4. CSS UI框架
     Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI...
