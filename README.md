@@ -1,6 +1,6 @@
 专注前端开发，做过PC端、移动端、微信、hybrid开发（apicloud）
 
-核心：解决各种自适应布局，完美还原设计图，js逻辑清晰，代码严谨，走eslint风格，面向对象开发插件，ES6语法，webpack打包
+核心：解决各种自适应布局和兼容性，完美还原设计图，js逻辑清晰，代码严谨，分析需求搭建结构，做数据交互，前后端分离
 
 ## 个人信息  
 
@@ -15,21 +15,23 @@
 
 ## 专业技能
 ### 1. HTML 
-    HTML5新元素(header、nav、article、section、footer/canvas、svg、video、audio)表单控件...
+    熟悉HTML4.0标签的自带特性
+    
+    HTML5语义化标签(header、nav、article、section、footer)、其他(canvas、svg、video、audio)表单控件...
     
 ### 2. CSS
-    CSS3选择器、盒子模型、Transition、Transform、Animation、Keyframes...
+    盒子模型、CSS3新属性(border-radius、linear-gradient、Transition、Transform、Animation、Keyframes...)
     
-    固定布局、浮动布局、定位布局、流体布局（媒体查询）、弹性布局
+    掌握固定布局、浮动布局、定位布局、流体布局(媒体查询+百分比布局)、弹性布局
 
     移动端常用rem
     
     习惯用sass
+    
+    遵从顺序编码规范 by @mdoc：1.Positioning 2.BoxModel 3.Typographic 4.Visual 
 
 ### 3. JavaScript
-    ECMAScript、DOM、BOM
-
-    数据类型、操作符、控制语句、函数 
+    掌握数据类型、操作符、控制语句、函数 
 
     对象、原型链、构造函数、作用域链、闭包、This
 
@@ -83,7 +85,7 @@
 
 
 ## 兴趣爱好
-保密
+编代码使我快乐
 
 ......
 
