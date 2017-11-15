@@ -59,11 +59,11 @@
 
 ## 个人作品
 
-> [微信上的女装商城，前端页面](http://red.tianshic.com/women-wear-mall/#/list) *用了Mock.js暂时模拟数据，下一步我会用jsonp抓取线上数据
+> [微信上的女装商城，前端页面](http://red.tianshic.com/women-wear-mall/#/list) *用了Mock.js暂时模拟数据，下一步我会用jsonp抓取线上数据，来渲染页面
 
 >> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/women-wear-mall.png)
 
-> [移动端路演平台](http://new.my930.com/m/#/home) *如果是电脑打开，请使用Chrome浏览器按`F12`模拟手机
+> [移动端路演平台](http://new.my930.com/m/#/home) *和一位后端好友配合完成了数据交互，有登录、注册、上传项目、展示项目、我的个人中心管理项目
 
 >> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/mobile.png)
 
