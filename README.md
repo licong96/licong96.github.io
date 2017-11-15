@@ -75,11 +75,7 @@
 
 ## 个人作品
 
-<<<<<<< HEAD
 > [微信上的女装商城，前端页面](http://red.tianshic.com/women-wear-mall/#/list)
-=======
-> [项目列表展示](http://red.tianshic.com/women-wear-mall/#/list) *建议在微信上打开
->>>>>>> c1c0578e5d2b28d44a03a90921fc7a611b769812
 
 >> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/women-wear-mall.png)
 
