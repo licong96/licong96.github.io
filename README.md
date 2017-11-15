@@ -31,17 +31,17 @@
     遵从顺序编码规范 by @mdoc：1.Positioning 2.BoxModel 3.Typographic 4.Visual
 
 ### 3. JavaScript
-    掌握数据类型、操作符、控制语句、函数
+    掌握数据类型、操作符、控制语句、函数
 
     对象、原型链、构造函数、作用域链、闭包、This
-
-    JSON、Ajax、Cookie、LocalStorage、ES6常用语法、Babel编译、JQ插件开发、组件开发
+    
+    JSON、Ajax、Cookie、LocalStorage、ES6常用语法、Babel编译、JQ插件开发、组件开发
 
 ### 4. CSS UI框架
     Muse-ui、Eleme、Semantic-ui、Bootstrap、Amaze-ui、WeUI...
 
 ### 5. JS库
-    jQuery、Zepto、Store、Mock、Lodash、ECharts、flexible等100+
+    jQuery、Zepto、Store、Mock、Lodash、ECharts、flexible等100+
 
 ### 6. JS框架
     用过Angular1，现在主攻VUE
@@ -56,6 +56,16 @@
     构建工具：webpack、Gulp、Fis3
 
     版本管理：Git、GitHub
+
+## 个人作品
+
+> [微信上的女装商城，前端页面](http://red.tianshic.com/women-wear-mall/#/list) *用了Mock.js暂时模拟数据，下一步我会用jsonp抓取线上数据
+
+>> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/women-wear-mall.png)
+
+> [移动端路演平台](http://new.my930.com/m/#/home) *如果是电脑打开，请使用Chrome浏览器按`F12`模拟手机
+
+>> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/mobile.png)
 
 ## 工作经历
 
@@ -72,17 +82,6 @@
 * 第二家公司：南昌蚂蚁众投投资管理有限公司，前端开发，为持续推进“大众创业、万众创新”，激发青年创业活力、服务青年成功创业，公司开办了my930青年创业节，举办了大学生创新创业大赛，根据这个开发了一个平台，能让大学生上传项目，展示项目，投票，拉票，评奖等，我负责前端开发，使用了比较传统的方法，也就是jQuery+DOM操作，对前后端数据交互有了更深一步的理解，也发现了这里面的问题，可读性和维护性差，DOM操作影响性能，做数据交互总会打乱之前的标签结构，无论是用字符串拼接还是es6的模板字符串，从结构上就不好理解，如果没有好的编程习惯，那jQuery代码就是一团糟了。
 
 * 第二期改版开发的时候，考虑到之前的问题，所以我使用了Angular1代替jQuery。后面开发一个项目路演平台，根据项目具体的需求分析，决定了用vue，以及它的全家桶。
-
-## 个人作品
-
-> [微信上的女装商城，前端页面](http://red.tianshic.com/women-wear-mall/#/list)
-
->> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/women-wear-mall.png)
-
-> [移动端路演平台](http://new.my930.com/m/#/home) *如果是电脑打开，请使用Chrome浏览器按`F12`模拟手机
-
->> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/mobile.png)
-
 
 ## 兴趣爱好
 编代码使我快乐
