@@ -63,7 +63,7 @@
 
 >> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/women-wear-mall.png)
 
-> [移动端路演平台](http://new.my930.com/m/#/home) *和一位后端好友配合完成了数据交互，有登录、注册、上传项目、展示项目、我的个人中心管理项目
+> [移动端路演平台](http://new.my930.com/m/#/home) *和一位后端好友配合完成了数据交互，有登录、注册、上传、展示、搜索、我的个人中心管理项目
 
 >> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/mobile.png)
 
