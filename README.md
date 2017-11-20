@@ -60,7 +60,7 @@ Math.ceil(精通) HTML5、CSS3、JavaScript、jQuery、Ajax、Vue.js、webpack�
 
 ## 个人作品
 
-> [微信上的女装商城，纯前端项目](http://red.tianshic.com/women-wear-mall/#/list) *用jsonp抓取了蘑菇街的线上数据，来渲染页面，请在微信上打开
+> [微信上的女装商城，纯前端项目](http://red.tianshic.com/women-wear-mall/#/list) *用jsonp抓取了蘑菇街的线上数据，来渲染页面，微信上打开更好
 
 >> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/women-wear-mall.png)
 
