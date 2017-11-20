@@ -59,7 +59,7 @@ Math.ceil(精通) HTML5、CSS3、JavaScript、jQuery、Ajax、Vue.js、webpack�
 
 ## 个人作品
 
-> [微信上的女装商城，前端页面](http://red.tianshic.com/women-wear-mall/#/list) *用了Mock.js暂时模拟数据，下一步我会用jsonp抓取线上数据，来渲染页面
+> [微信上的女装商城，前端页面](http://red.tianshic.com/women-wear-mall/#/list) *用jsonp抓取了蘑菇街的线上数据，来渲染页面
 
 >> ![二维码，网络不畅可能会丢失](https://raw.githubusercontent.com/licong96/licong96.github.io/master/women-wear-mall.png)
 
