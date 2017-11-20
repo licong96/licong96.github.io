@@ -1,6 +1,6 @@
 专注前端开发，做过PC端、移动端、微信、hybrid开发（apicloud）
 
-核心：解决各种自适应布局和兼容性，完美还原设计图，js逻辑清晰，代码严谨，分析需求搭建结构，做数据交互，前后端分离
+Math.ceil(精通)HTML5、CSS3、JavaScript、jQuery、Ajax、Vue.js、webpack等核心的Web前端技术
 
 ## 个人信息  
 
