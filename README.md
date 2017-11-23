@@ -8,7 +8,7 @@ Math.ceil(精通) HTML5、CSS3、JavaScript、jQuery、Ajax、Vue.js、webpack�
 ```
 姓名：黎聪                  性别：男
 
-学历：江西农业大学专科       工作经验：2年
+学历：江西农业大学专科       工作经验：1年8个月
 
 电话：136-9953-1996
 ```
