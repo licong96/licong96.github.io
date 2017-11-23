@@ -1,4 +1,4 @@
-### 正在求职
+### 已工作
 专注前端开发，做过PC端、移动端、微信、hybrid开发（apicloud）
 
 Math.ceil(精通) HTML5、CSS3、JavaScript、jQuery、Ajax、Vue.js、webpack等核心的前端技术
