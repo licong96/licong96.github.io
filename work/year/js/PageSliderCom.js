@@ -3,14 +3,14 @@ $(document).ready(function () {
 
   var userInfo = {}
   var aPic = [
-    '../image/car_body.png',
-    '../image/car_wheel.png',
-    '../image/light_1.png',
-    '../image/light_2.png',
-    '../image/page1_bg.jpg',
-    '../image/page_1_text1.png',
-    '../image/page_1_text2.png',
-    '../image/page_1_text3.png',
+    './image/car_body.png',
+    './image/car_wheel.png',
+    './image/light_1.png',
+    './image/light_2.png',
+    './image/page1_bg.jpg',
+    './image/page_1_text1.png',
+    './image/page_1_text2.png',
+    './image/page_1_text3.png',
   ];
 
   function getCookie(c_name) {
