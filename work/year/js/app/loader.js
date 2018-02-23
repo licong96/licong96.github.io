@@ -1,15 +1,11 @@
 define(['zepto'], function ($) {
-  var aImage = [
-    // ''
-  ];
 
-  $(aImage).each(function (index) {
-    $(this).load(function () {
-      console.log('加载完成'+index)
-    })
-    $(this).error(function () {
-      console.log('加载失败'+index)
-    })
-  });
+  setTimeout(function () {
+    $('.js_page_1').removeClass('current')
+    setTimeout(function () {
+      $('.js_page_1').addClass('current')
+      $('.js_loader').hide();
+    }, 20)
+  }, 2000);
 
 });

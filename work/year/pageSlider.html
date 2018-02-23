@@ -7,18 +7,19 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="email=no">
   <script src="./js/lib/lib-flexible.js"></script>
-  <title>Document</title>
+  <title>年终盘点</title>
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/page-slider.css?5">
-  <link rel="stylesheet" href="//at.alicdn.com/t/font_561660_33ep5rdatfwghkt9.css">
+  <link rel="stylesheet" href="./css/page-slider.css?v=1.0">
+  <style>
+    .page {
+      perspective: none;
+      -webkit-perspective: none;
+    }
+  </style>
 </head>
-
-<!-- 注意ios背景闪烁问题就是 calss为 join-team 这个元素造成的， 它现在的css3动画是 flipInX 在样式表里去掉就没问题-->
-
-
 <body>
   <!-- 加载中 -->
-  <section class="loader" style="display: none;">
+  <section class="loader js_loader">
     <div class="center">
       <div class="car">
         <!-- 车身 -->
@@ -35,19 +36,19 @@
   </section>
   <!-- music -->
   <section class="music music-play js_music">
-    <i class="iconfont icon-yinle js_icon_music"></i>
+    <i class="iconfont icon-yinlemusic214 js_icon_music"></i>
     <i class="icon-line"></i>
   </section>
-  <audio id="music" autoplay loop src="./music/music.mp3" style="display: none;"></audio>
+  <audio id="music" autoplay loop src="./video/lastYear.mp3" style="display: none;"></audio>
   <!-- main -->
   <div class="page-wrap">
     <!-- 第一屏 -->
-    <div class="page page-1">
+    <div class="page page-1 js_page_1">
       <section class="user">
-        <img class="user-photo" src="http://img3.imgtn.bdimg.com/it/u=1611505379,380489200&fm=27&gp=0.jpg" alt="">
+        <img class="user-photo js_user_pic" src="http://img3.imgtn.bdimg.com/it/u=1611505379,380489200&fm=27&gp=0.jpg" alt="">
         <div class="user-info">
-          <p class="user-name">黎聪</p>
-          <p class="user-branch">网络技术部</p>
+          <p class="user-name js_emp_name"></p>
+          <p class="user-branch js_dept_name"></p>
         </div>
       </section>
       <!-- light光 -->
@@ -84,9 +85,9 @@
         <span class="cloud-small"></span>
         <span class="cloud-big"></span>
       </div>
-      <div class="char-2-top">
-        <p class="desc">2018年2月2日</p>
-        <p class="desc">黎聪加入我们团队</p>
+      <div class="char-2-top js_page2_desc">
+        <!-- <p class="desc">2017年2月2日</p>
+        <p class="desc">黎聪加入我们团队</p> -->
       </div>
       <p class="join-team js_join_team">加入团队</p>
       <div class="car">
@@ -101,9 +102,9 @@
         <span class="cloud-small"></span>
         <span class="cloud-big"></span>
       </div>
-      <div class="char-2-top">
-        <p class="desc">2017年黎聪</p>
-        <p class="desc">一共新增了N个客户</p>
+      <div class="char-2-top js_page3_desc">
+        <!-- <p class="desc">2017年黎聪</p>
+        <p class="desc">一共新增了N个客户</p> -->
       </div>
       <p class="join-team js_join_team">新增客户</p>
       <div class="car">
@@ -118,9 +119,9 @@
         <span class="cloud-small"></span>
         <span class="cloud-big"></span>
       </div>
-      <div class="char-2-top">
-        <p class="desc">2017年黎聪</p>
-        <p class="desc">一共报备了N个客户</p>
+      <div class="char-2-top js_page4_desc">
+        <!-- <p class="desc">2017年黎聪</p>
+        <p class="desc">一共报备了N个客户</p> -->
       </div>
       <p class="join-team js_join_team">报备客户</p>
       <div class="car">
@@ -136,9 +137,9 @@
         <span class="cloud-small"></span>
         <span class="cloud-big"></span>
       </div>
-      <div class="char-2-top">
-        <p class="desc">2017年黎聪</p>
-        <p class="desc">一共到访了N个客户</p>
+      <div class="char-2-top js_page5_desc">
+        <!-- <p class="desc">2017年黎聪</p>
+        <p class="desc">一共到访了N个客户</p> -->
       </div>
       <p class="join-team js_join_team">到访客户</p>
       <!-- car -->
@@ -189,8 +190,7 @@
   </div>
 
   <script src="./js/lib/zepto.min.js"></script>
-  <!-- <script src="./js/lib/PageSlider.js"></script>
-  <script src="./js/app/common.js"></script> -->
-  <script data-main="js/main" src="js/lib/require.js"></script>
+  <script src="./js/lib/PageSlider.js"></script>
+  <script src="./js/PageSliderCom.js?v=1.0.0"></script>
 </body>
 </html>
