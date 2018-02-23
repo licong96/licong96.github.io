@@ -285,7 +285,7 @@ html {
     -webkit-animation: flipInX 1s both;
             animation: flipInX 1s both;
 /*   -webkit-transition: opacity .5s;
-  transition: opacity .5s; } */
+  transition: opacity .5s;  */}
   .common-page.current .join-team.out {
     -webkit-animation: bounceOutRight 1s both;
             animation: bounceOutRight 1s both; }
