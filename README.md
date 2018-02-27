@@ -1,6 +1,6 @@
 专注前端开发，做过PC端、移动端、微信小程序、hybrid-APP
 
-擅长HTML5、CSS3、JavaScript、jQuery、requireJS、Vue.js、Webpack、Gulp、Git等前端技术
+擅长HTML5、CSS3、JavaScript、jQuery、RequireJS、Vue.js、Webpack、Gulp、Git等前端技术
 
 ## 个人信息  
 
