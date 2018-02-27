@@ -1,4 +1,4 @@
-专注前端开发，做过PC端、移动端、微信小程序、hybrid开发
+专注前端开发，做过PC端、移动端、微信小程序、hybrid-APP
 
 擅长HTML5、CSS3、JavaScript、jQuery、Vue.js、webpack等前端技术
 
