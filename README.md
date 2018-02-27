@@ -1,14 +1,14 @@
 ### 已工作
-专注前端开发，做过PC端、移动端、微信、hybrid开发（apicloud）
+专注前端开发，做过PC端、移动端、微信小程序、hybrid开发（apicloud）、Native开发（weex）
 
-Math.ceil(精通) HTML5、CSS3、JavaScript、jQuery、Ajax、Vue.js、webpack等核心的前端技术
+擅长HTML5、CSS3、JavaScript、jQuery、Vue.js、webpack等前端技术
 
 ## 个人信息  
 
 ```
 姓名：黎聪                  性别：男
 
-学历：江西农业大学专科       工作经验：1年8个月
+学历：江西农业大学专科       工作经验：2年
 
 电话：136-9953-1996
 ```
@@ -35,7 +35,7 @@ Math.ceil(精通) HTML5、CSS3、JavaScript、jQuery、Ajax、Vue.js、webpack�
     掌握数据类型、操作符、控制语句、函数
 
     对象、原型链、构造函数、作用域链、闭包、This
-    
+
     JSON、Ajax、Cookie、LocalStorage、ES6常用语法、Babel编译、JQ插件开发、组件开发
 
 ### 4. CSS UI框架
