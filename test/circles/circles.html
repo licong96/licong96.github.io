@@ -10,7 +10,7 @@
   <style>
     .box {
       overflow: hidden;
-      margin: 25% auto;
+      margin: 100px auto 0;
       padding: 20px;
       width: 300px;
     }
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div class="box">
+<div class="box">
   <div id="rotatescroll">
     <div class="viewport">
       <ul class="overview">
@@ -69,16 +69,20 @@
     <div class="dot"></div>
     <div class="overlay"></div>
     <div class="thumb"></div>
-  </div></div>
+  </div>
+</div>
 
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="./jquery.tinycircleslider.min.js"></script>
   <script>
     $(document).ready(function () {
+      
       $('#rotatescroll').tinycircleslider({
+        dotsSnap: true,
         interval: true,
-        dotsSnap: true
+        intervalTime: 3500
       });
+
     });
   </script>
 </body>
