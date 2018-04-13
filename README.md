@@ -1,13 +1,13 @@
 专注前端开发，做过PC端、移动端、微信小程序、hybrid-APP
 
-擅长HTML5、CSS3、JavaScript、jQuery、Require.js、Vue.js、Webpack、Gulp、Git等前端技术
+擅长HTML5、CSS3、JavaScript、jQuery、Require.js、Vue.js、Weex、Webpack、Gulp、Git、模块化开发、组件化开发
 
 ## 个人信息  
 
 ```
 姓名：黎聪                     性别：男
 
-学历：江西农业大学专科          工作经验：2年
+学历：江西农业大学              工作经验：2年
 
 电话：136-9953-1996            年龄：96年
 ```
