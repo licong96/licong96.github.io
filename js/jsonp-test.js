@@ -14,3 +14,6 @@ var data = {
   ]
 };
 callback(data);
+
+var string = JSON.stringify(data);
+callbackString(string);
