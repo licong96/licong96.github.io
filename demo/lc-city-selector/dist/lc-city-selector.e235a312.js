@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({8:[function(require,module,exports) {
+})({10:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],7:[function(require,module,exports) {
+},{}],9:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,13 +138,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":8}],4:[function(require,module,exports) {
+},{"./bundle-url":10}],6:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":7}],5:[function(require,module,exports) {
+},{"_css_loader":9}],7:[function(require,module,exports) {
 module.exports = {
   "北京市": {
     "市辖区": ["东城区", "西城区", "朝阳区", "丰台区", "石景山区", "海淀区", "门头沟区", "房山区", "通州区", "顺义区", "昌平区", "大兴区", "怀柔区", "平谷区", "密云区", "延庆区"]
@@ -554,44 +554,13 @@ module.exports = {
   }
 }
 ;
-},{}],6:[function(require,module,exports) {
+},{}],8:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-/* eslint no-unused-expressions: 0 */
-const reUnit = /width|height|top|left|right|bottom|margin|padding/i;
-let _amId = 1;
-const _amDisplay = {};
-
-let requestAnimationFrame;
-if (typeof window !== 'undefined') {
-  requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (callback) {
-    window.setTimeout(callback, 1000 / 60);
-  };
-} else {
-  requestAnimationFrame = function () {
-    throw new Error('requestAnimationFrame is not supported, maybe you are running in the server side');
-  };
-}
-
-function getAmId(obj) {
-  return obj._amId || (obj._amId = _amId++);
-}
-
-function setAmDisplay(elem, display) {
-  const id = getAmId(elem);
-  _amDisplay[`_am_${id}`] = display;
-}
-
-function getAmDisplay(elem) {
-  const id = getAmId(elem);
-  return _amDisplay[`_am_${id}`];
-}
-
 exports.default = {
-  // el can be an Element, NodeList or selector
   addClass(el, className) {
     if (typeof el === 'string') el = document.querySelectorAll(el);
     const els = el instanceof NodeList ? [].slice.call(el) : [el];
@@ -609,7 +578,6 @@ exports.default = {
     });
   },
 
-  // el can be an Element, NodeList or selector
   removeClass(el, className) {
     if (typeof el === 'string') el = document.querySelectorAll(el);
     const els = el instanceof NodeList ? [].slice.call(el) : [el];
@@ -625,7 +593,6 @@ exports.default = {
     });
   },
 
-  // el can be an Element or selector
   hasClass(el, className) {
     if (typeof el === 'string') el = document.querySelector(el);
     if (el.classList) {
@@ -634,97 +601,10 @@ exports.default = {
     return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
   },
 
-  // el can be an Element or selector
-  toggleClass(el, className) {
-    if (typeof el === 'string') el = document.querySelector(el);
-    const flag = this.hasClass(el, className);
-    if (flag) {
-      this.removeClass(el, className);
-    } else {
-      this.addClass(el, className);
-    }
-    return flag;
-  },
-
-  insertAfter(newEl, targetEl) {
-    const parent = targetEl.parentNode;
-
-    if (parent.lastChild === targetEl) {
-      parent.appendChild(newEl);
-    } else {
-      parent.insertBefore(newEl, targetEl.nextSibling);
-    }
-  },
-
-  // el can be an Element, NodeList or query string
-  remove(el) {
-    if (typeof el === 'string') {
-      [].forEach.call(document.querySelectorAll(el), node => {
-        node.parentNode.removeChild(node);
-      });
-    } else if (el.parentNode) {
-      // it's an Element
-      el.parentNode.removeChild(el);
-    } else if (el instanceof NodeList) {
-      // it's an array of elements
-      [].forEach.call(el, node => {
-        node.parentNode.removeChild(node);
-      });
-    } else {
-      throw new Error('you can only pass Element, array of Elements or query string as argument');
-    }
-  },
-
-  forceReflow(el) {
-    el.offsetHeight;
-  },
-
-  getDocumentScrollTop() {
-    // IE8 used `document.documentElement`
-    return document.documentElement && document.documentElement.scrollTop || document.body.scrollTop;
-  },
-
-  // Set the current vertical position of the scroll bar for document
-  // Note: do not support fixed position of body
-  setDocumentScrollTop(value) {
-    window.scrollTo(0, value);
-    return value;
-  },
-
-  outerHeight(el) {
-    return el.offsetHeight;
-  },
-
-  outerHeightWithMargin(el) {
-    let height = el.offsetHeight;
-    const style = getComputedStyle(el);
-
-    height += (parseFloat(style.marginTop) || 0) + (parseFloat(style.marginBottom) || 0);
-    return height;
-  },
-
-  outerWidth(el) {
-    return el.offsetWidth;
-  },
-
-  outerWidthWithMargin(el) {
-    let width = el.offsetWidth;
-    const style = getComputedStyle(el);
-
-    width += (parseFloat(style.marginLeft) || 0) + (parseFloat(style.marginRight) || 0);
-    return width;
-  },
-
-  getComputedStyles(el) {
-    return el.ownerDocument.defaultView.getComputedStyle(el, null);
-  },
-
   getOffset(el) {
     const html = el.ownerDocument.documentElement;
     let box = { top: 0, left: 0 };
 
-    // If we don't have gBCR, just use 0,0 rather than error
-    // BlackBerry 5, iOS 3 (original iPhone)
     if (typeof el.getBoundingClientRect !== 'undefined') {
       box = el.getBoundingClientRect();
     }
@@ -735,99 +615,6 @@ exports.default = {
     };
   },
 
-  getPosition(el) {
-    if (!el) {
-      return {
-        left: 0,
-        top: 0
-      };
-    }
-
-    return {
-      left: el.offsetLeft,
-      top: el.offsetTop
-    };
-  },
-
-  setStyle(node, att, val, style) {
-    style = style || node.style;
-
-    if (style) {
-      if (val === null || val === '') {
-        // normalize unsetting
-        val = '';
-      } else if (!isNaN(Number(val)) && reUnit.test(att)) {
-        // number values may need a unit
-        val += 'px';
-      }
-
-      if (att === '') {
-        att = 'cssText';
-        val = '';
-      }
-
-      style[att] = val;
-    }
-  },
-
-  setStyles(el, hash) {
-    const HAS_CSSTEXT_FEATURE = typeof el.style.cssText !== 'undefined';
-    function trim(str) {
-      return str.replace(/^\s+|\s+$/g, '');
-    }
-    let originStyleText;
-    const originStyleObj = {};
-    if (!!HAS_CSSTEXT_FEATURE) {
-      originStyleText = el.style.cssText;
-    } else {
-      originStyleText = el.getAttribute('style');
-    }
-    originStyleText.split(';').forEach(item => {
-      if (item.indexOf(':') !== -1) {
-        const obj = item.split(':');
-        originStyleObj[trim(obj[0])] = trim(obj[1]);
-      }
-    });
-
-    const styleObj = {};
-    Object.keys(hash).forEach(item => {
-      this.setStyle(el, item, hash[item], styleObj);
-    });
-    const mergedStyleObj = Object.assign({}, originStyleObj, styleObj);
-    const styleText = Object.keys(mergedStyleObj).map(item => item + ': ' + mergedStyleObj[item] + ';').join(' ');
-
-    if (!!HAS_CSSTEXT_FEATURE) {
-      el.style.cssText = styleText;
-    } else {
-      el.setAttribute('style', styleText);
-    }
-  },
-
-  getStyle(el, att, style) {
-    style = style || el.style;
-
-    let val = '';
-
-    if (style) {
-      val = style[att];
-
-      if (val === '') {
-        val = this.getComputedStyle(el, att);
-      }
-    }
-
-    return val;
-  },
-
-  // NOTE: Known bug, will return 'auto' if style value is 'auto'
-  getComputedStyle(el, att) {
-    const win = el.ownerDocument.defaultView;
-    // null means not return presudo styles
-    const computed = win.getComputedStyle(el, null);
-
-    return att ? computed[att] : computed;
-  },
-
   getPageSize() {
     let xScroll, yScroll;
 
@@ -836,11 +623,9 @@ exports.default = {
       yScroll = window.innerHeight + window.scrollMaxY;
     } else {
       if (document.body.scrollHeight > document.body.offsetHeight) {
-        // all but Explorer Mac
         xScroll = document.body.scrollWidth;
         yScroll = document.body.scrollHeight;
       } else {
-        // Explorer Mac...would also work in Explorer 6 Strict, Mozilla and Safari
         xScroll = document.body.offsetWidth;
         yScroll = document.body.offsetHeight;
       }
@@ -849,7 +634,6 @@ exports.default = {
     let windowWidth, windowHeight;
 
     if (self.innerHeight) {
-      // all except Explorer
       if (document.documentElement.clientWidth) {
         windowWidth = document.documentElement.clientWidth;
       } else {
@@ -858,12 +642,10 @@ exports.default = {
       windowHeight = self.innerHeight;
     } else {
       if (document.documentElement && document.documentElement.clientHeight) {
-        // Explorer 6 Strict Mode
         windowWidth = document.documentElement.clientWidth;
         windowHeight = document.documentElement.clientHeight;
       } else {
         if (document.body) {
-          // other Explorers
           windowWidth = document.body.clientWidth;
           windowHeight = document.body.clientHeight;
         }
@@ -872,13 +654,12 @@ exports.default = {
 
     let pageHeight, pageWidth;
 
-    // for small pages with total height less then height of the viewport
     if (yScroll < windowHeight) {
       pageHeight = windowHeight;
     } else {
       pageHeight = yScroll;
     }
-    // for small pages with total width less then width of the viewport
+
     if (xScroll < windowWidth) {
       pageWidth = xScroll;
     } else {
@@ -891,164 +672,9 @@ exports.default = {
       windowWidth: windowWidth,
       windowHeight: windowHeight
     };
-  },
-
-  get(selector) {
-    return document.querySelector(selector) || {};
-  },
-
-  getAll(selector) {
-    return document.querySelectorAll(selector);
-  },
-
-  // selector 可选。字符串值，规定在何处停止对祖先元素进行匹配的选择器表达式。
-  // filter   可选。字符串值，包含用于匹配元素的选择器表达式。
-  parentsUntil(el, selector, filter) {
-    const result = [];
-    const matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
-    // match start from parent
-    el = el.parentElement;
-    while (el && !matchesSelector.call(el, selector)) {
-      if (!filter) {
-        result.push(el);
-      } else {
-        if (matchesSelector.call(el, filter)) {
-          result.push(el);
-        }
-      }
-      el = el.parentElement;
-    }
-    return result;
-  },
-
-  // 获得匹配选择器的第一个祖先元素，从当前元素开始沿 DOM 树向上
-  closest(el, selector) {
-    const matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
-
-    while (el) {
-      if (matchesSelector.call(el, selector)) {
-        return el;
-      }
-
-      el = el.parentElement;
-    }
-    return null;
-  },
-
-  // el can be an Element, NodeList or selector
-  _showHide(el, show) {
-    if (typeof el === 'string') el = document.querySelectorAll(el);
-    const els = el instanceof NodeList ? [].slice.call(el) : [el];
-    let display;
-    const values = [];
-    if (els.length === 0) {
-      return;
-    }
-    els.forEach((e, index) => {
-      if (e.style) {
-        display = e.style.display;
-        if (show) {
-          if (display === 'none') {
-            values[index] = getAmDisplay(e) || '';
-          }
-        } else {
-          if (display !== 'none') {
-            values[index] = 'none';
-            setAmDisplay(e, display);
-          }
-        }
-      }
-    });
-
-    els.forEach((e, index) => {
-      if (values[index] !== null) {
-        els[index].style.display = values[index];
-      }
-    });
-  },
-
-  show(elements) {
-    this._showHide(elements, true);
-  },
-
-  hide(elements) {
-    this._showHide(elements, false);
-  },
-
-  toggle(element) {
-    if (element.style.display === 'none') {
-      this.show(element);
-    } else {
-      this.hide(element);
-    }
-  },
-
-  /**
-   * scroll to location with animation
-   * @param  {Number} to       to assign the scrollTop value
-   * @param  {Number} duration assign the animate duration
-   * @return {Null}            return null
-   */
-  scrollTo(to = 0, duration = 16) {
-    if (duration < 0) {
-      return;
-    }
-    const diff = to - this.getDocumentScrollTop();
-    if (diff === 0) {
-      return;
-    }
-    const perTick = diff / duration * 10;
-    requestAnimationFrame(() => {
-      if (Math.abs(perTick) > Math.abs(diff)) {
-        this.setDocumentScrollTop(this.getDocumentScrollTop() + diff);
-        return;
-      }
-      this.setDocumentScrollTop(this.getDocumentScrollTop() + perTick);
-      if (diff > 0 && this.getDocumentScrollTop() >= to || diff < 0 && this.getDocumentScrollTop() <= to) {
-        return;
-      }
-      this.scrollTo(to, duration - 16);
-    });
-  },
-
-  // matches(el, '.my-class'); 这里不能使用伪类选择器
-  is(el, selector) {
-    return (el.matches || el.matchesSelector || el.msMatchesSelector || el.mozMatchesSelector || el.webkitMatchesSelector || el.oMatchesSelector).call(el, selector);
-  },
-
-  width(el) {
-    const styles = this.getComputedStyles(el);
-    const width = parseFloat(styles.width.indexOf('px') !== -1 ? styles.width : 0);
-
-    const boxSizing = styles.boxSizing || 'content-box';
-    if (boxSizing === 'border-box') {
-      return width;
-    }
-
-    const borderLeftWidth = parseFloat(styles.borderLeftWidth);
-    const borderRightWidth = parseFloat(styles.borderRightWidth);
-    const paddingLeft = parseFloat(styles.paddingLeft);
-    const paddingRight = parseFloat(styles.paddingRight);
-    return width - borderRightWidth - borderLeftWidth - paddingLeft - paddingRight;
-  },
-
-  height(el) {
-    const styles = this.getComputedStyles(el);
-    const height = parseFloat(styles.height.indexOf('px') !== -1 ? styles.height : 0);
-
-    const boxSizing = styles.boxSizing || 'content-box';
-    if (boxSizing === 'border-box') {
-      return height;
-    }
-
-    const borderTopWidth = parseFloat(styles.borderTopWidth);
-    const borderBottomWidth = parseFloat(styles.borderBottomWidth);
-    const paddingTop = parseFloat(styles.paddingTop);
-    const paddingBottom = parseFloat(styles.paddingBottom);
-    return height - borderBottomWidth - borderTopWidth - paddingTop - paddingBottom;
   }
 };
-},{}],3:[function(require,module,exports) {
+},{}],5:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1086,6 +712,7 @@ class LcCity {
     if (option.data) {
       this.isFill = true;
     };
+    this.timeNav = null; // 防止导航渲染重复渲染
 
     // 生成一个随机数
     this.randomNum = parseInt(Math.random() * 1000);
@@ -1107,30 +734,30 @@ class LcCity {
   renderHtml() {
     let html = `<div class="lc-city-body">
                   <div class="lc-titile">
-                    <button class="lc-btn lc-cancel lc_cancel" id="lcCancel">取消</button>
+                    <button class="lc-btn lc-cancel lc_cancel">取消</button>
                     <h4 class="lc-top-title">选择地区</h4>
-                    <button class="lc-btn lc-cancel lc_confirm" id="lcConfirm">确定</button>
+                    <button class="lc-btn lc-cancel lc_confirm">确定</button>
                   </div>
-                  <div class="lc-nav-wrap lc_nav" id="lcNav">
+                  <div class="lc-nav-wrap lc_nav">
                     <span class="lc-nav active">请选择</span>
                   </div>
-                  <div class="lc-center lc_center" id="lcCenter">
+                  <div class="lc-center lc_center">
                     <ul class="lc-ul">
-                    <div class="lc-scroll lc_province" id="lcProvince">
+                    <div class="lc-scroll lc_province">
                     </div>
                     </ul>
                     <ul class="lc-ul">
-                      <div class="lc-scroll lc_city" id="lcCity">
+                      <div class="lc-scroll lc_city">
                       </div>
                     </ul>
                     <ul class="lc-ul">
-                      <div class="lc-scroll lc_district" id="lcDistrict">
+                      <div class="lc-scroll lc_district">
                       </div>
                     </ul>
                   </div>
                 </div>
-                <div class="lc-city-mask lc_city_mask" id="lcCityMask"></div>
-                <div class="lc-error-tip lc_error_tip" id="lcErrorTip"></div>`;
+                <div class="lc-city-mask lc_city_mask"></div>
+                <div class="lc-error-tip lc_error_tip"></div>`;
 
     let div = document.createElement('div');
     div.className = 'lc-city-select';
@@ -1207,22 +834,55 @@ class LcCity {
   }
   // 渲染省份
   renderProvince(arr) {
-    if (!arr.length) {
-      return;
-    };
-    let html = '';
+    let html = this._renderList(arr);
+    if (html) {
+      this.el.lcProvince.innerHTML = html;
+      this.onProvince(); // 给每个省份添加事件
+    }
+  }
+  // 渲染城市
+  renderCity(arr) {
+    let html = this._renderList(arr);
+    if (html) {
+      this.el.lcCity.innerHTML = html;
+      this.onCity(); // 给每个城市添加事件
 
+      // 判断是否回填城市
+      if (this.isFill && !this.fillCount.city) {
+        this.fillCount.city = true; // 只回填一次，否则要出大事
+        this.fillCity();
+      }
+    }
+  }
+  // 渲染区域
+  renderDistrict(arr) {
+    let html = this._renderList(arr);
+    if (html) {
+      this.el.lcDistrict.innerHTML = html;
+      this.onDistrict(); // 给每个区域添加事件
+
+      // 判断是否回填区域
+      if (this.isFill && !this.fillCount.district) {
+        this.fillCount.district = true;
+        this.fillDistrict();
+      }
+    }
+  }
+  // 列表渲染列表函数，返回html
+  _renderList(arr) {
+    if (!arr.length) {
+      return false;
+    };
+
+    let html = '';
     for (let i = 0, leng = arr.length; i < leng; i++) {
       html += `<li class="lc-li" data-val="${arr[i]}">${arr[i]}<i class="icon"></i></li>`;
     };
-    this.el.lcProvince.innerHTML = html;
-
-    this.onProvince(); // 给每个省份添加事件
+    return html;
   }
   // 根据省份获取城市数据
   getDataCity(province) {
     if (province === this.select.province) {
-      // console.log('点了同一个没有什么意思啊')
       return;
     };
 
@@ -1246,29 +906,9 @@ class LcCity {
     };
     this.renderCity(arr); // 渲染城市
   }
-  // 渲染城市
-  renderCity(arr) {
-    if (!arr.length) {
-      return;
-    };
-    let html = '';
-    for (let i = 0, leng = arr.length; i < leng; i++) {
-      html += `<li class="lc-li" data-val="${arr[i]}">${arr[i]}<i class="icon"></i></li>`;
-    };
-    this.el.lcCity.innerHTML = html;
-
-    this.onCity(); // 给每个城市添加事件
-
-    // 判断是否回填城市
-    if (this.isFill && !this.fillCount.city) {
-      this.fillCount.city = true; // 只回填一次，否则要出大事
-      this.fillCity();
-    }
-  }
   // 根据城市获取区域数据
   getDataDistrict(city) {
     if (city === this.select.city) {
-      // console.log('点了同一个没有什么意思啊')
       return;
     };
 
@@ -1288,25 +928,6 @@ class LcCity {
     };
 
     this.renderDistrict(arr); // 渲染区域
-  }
-  // 渲染区域
-  renderDistrict(arr) {
-    if (!arr.length) {
-      return;
-    };
-    let html = '';
-    for (let i = 0, leng = arr.length; i < leng; i++) {
-      html += `<li class="lc-li" data-val="${arr[i]}">${arr[i]}<i class="icon"></i></li>`;
-    };
-    this.el.lcDistrict.innerHTML = html;
-
-    this.onDistrict(); // 给每个区域添加事件
-
-    // 判断是否回填区域
-    if (this.isFill && !this.fillCount.district) {
-      this.fillCount.district = true;
-      this.fillDistrict();
-    }
   }
   // 给每个省份添加事件
   onProvince() {
@@ -1375,42 +996,53 @@ class LcCity {
 
   // 渲染导航
   renderNav() {
-    let lcNav = this.el.lcNav,
-        aSpan = lcNav.getElementsByTagName('span'),
-        select = this.select,
-        index = 0,
-        // 下标记录
-    html = '';
+    var _line = () => {
+      let lcNav = this.el.lcNav,
+          aSpan = lcNav.getElementsByTagName('span'),
+          select = this.select,
+          index = 0,
+          // 下标记录
+      html = '';
 
-    // console.log(select)
-    for (let key in select) {
-      if (select[key]) {
-        html += `<span class="lc-nav">${select[key]}</span>`;
-        index++;
-      } else {
-        html += `<span class="lc-nav">请选择</span>`;
-        if (index === 1) {
-          // 选中省份的时候，只需要个请选择项
-          break;
+      for (let key in select) {
+        if (select[key]) {
+          html += `<span class="lc-nav">${select[key]}</span>`;
+          index++;
+        } else {
+          html += `<span class="lc-nav">请选择</span>`;
+          if (index === 1) {
+            // 选中省份的时候，只需要个请选择项
+            break;
+          }
         }
-      }
-    };
-    lcNav.innerHTML = html;
-
-    setTimeout(() => {
-      _util2.default.addClass(aSpan[index - 1], 'active'); // 给对应的选项添加class
-
-      // 如果是回填，这里添加class有点不一样了
-      if (this.isFill) {
-        this.fillCount.nav = true; // 只执行一次
-        for (let i = 0, length = aSpan.length; i < length; i++) {
-          _util2.default.removeClass(aSpan[i], 'active');
-        };
-        _util2.default.addClass(aSpan[aSpan.length - 1], 'active'); // 给对应的选项添加class
       };
-    }, 30);
+      lcNav.innerHTML = html;
 
-    this.onNav(); // 给导航添加事件
+      setTimeout(() => {
+        _util2.default.addClass(aSpan[index - 1], 'active'); // 给对应的选项添加class
+
+        // 如果是回填，这里添加class有点不一样了
+        if (this.isFill) {
+          this.fillCount.nav = true; // 只执行一次
+          for (let i = 0, length = aSpan.length; i < length; i++) {
+            _util2.default.removeClass(aSpan[i], 'active');
+          };
+          _util2.default.addClass(aSpan[aSpan.length - 1], 'active'); // 给对应的选项添加class
+        };
+      }, 30);
+
+      this.onNav(); // 给导航添加事件
+    };
+
+    if (this.isFill) {
+      this.timeNav && clearTimeout(this.timeNav);
+      // 防止重复渲染，已提高性能
+      this.timeNav = setTimeout(() => {
+        _line();
+      }, 30);
+    } else {
+      _line();
+    };
   }
   // 给导航添加事件
   onNav() {
@@ -1487,7 +1119,7 @@ class LcCity {
 
       this.el.lcCitySelect.style.top = offset.top + height + 'px';
       this.el.lcCitySelect.style.left = offset.left + 'px';
-    }
+    };
 
     _util2.default.addClass(this.el.lcCitySelect, 'lc-show');
     // 回填
@@ -1541,7 +1173,7 @@ class LcCity {
       if (aLi[i].getAttribute('data-val') === province) {
         _util2.default.addClass(aLi[i], 'active');
         // 设置滚动位置，让当前选中的元素居中显示
-        lcProvince.scrollTop = (i > 4 ? i - 4 : i) * liHeight;
+        i > 5 ? lcProvince.scrollTop = (i - 4) * liHeight : '';
       }
     };
 
@@ -1558,9 +1190,7 @@ class LcCity {
       if (aLi[i].getAttribute('data-val') === city) {
         _util2.default.addClass(aLi[i], 'active');
         // 设置滚动位置，让当前选中的元素居中显示
-        if (i > 5) {
-          lcCity.scrollTop = (i - 4) * liHeight;
-        }
+        i > 5 ? lcCity.scrollTop = (i - 4) * liHeight : '';
       }
     };
 
@@ -1577,17 +1207,16 @@ class LcCity {
       if (aLi[i].getAttribute('data-val') === district) {
         _util2.default.addClass(aLi[i], 'active');
         // 设置滚动位置，让当前选中的元素居中显示
-        if (i > 5) {
-          lcDistrict.scrollTop = (i - 4) * liHeight;
-        }
+        i > 5 ? lcDistrict.scrollTop = (i - 4) * liHeight : '';
       }
     };
     // 最后，填入区域选项
     this.select.district = this.option.data.district;
+    this.renderNav();
   }
 }exports.default = LcCity;
 ;
-},{"./lc-city.css":4,"./data.json":5,"./util.js":6}],2:[function(require,module,exports) {
+},{"./lc-city.css":6,"./data.json":7,"./util.js":8}],4:[function(require,module,exports) {
 'use strict';
 
 var _lcCitySelector = require('lc-city-selector');
@@ -1601,7 +1230,7 @@ var defaultInput = document.getElementById('default');
 
 var baseCity = new _lcCitySelector2.default({
   confirm: function confirm(data) {
-    baseInput.value = data;
+    baseInput.innerHTML = data;
   }
 });
 
@@ -1617,13 +1246,13 @@ var defaultCity = new _lcCitySelector2.default({
     district: '青山湖区'
   },
   confirm: function confirm(data) {
-    defaultInput.value = data;
+    defaultInput.innerHTML = data;
   }
 });
 defaultInput.addEventListener('click', function () {
   defaultCity.show(defaultInput);
 });
-},{"lc-city-selector":3}],9:[function(require,module,exports) {
+},{"lc-city-selector":5}],13:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -1653,7 +1282,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56397' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58529' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -1792,5 +1421,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[9,2])
+},{}]},{},[13,4])
 //# sourceMappingURL=/lc-city-selector.e235a312.map
