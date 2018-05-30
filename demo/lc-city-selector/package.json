@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/licong96/lc-city-selector#readme",
   "dependencies": {
-    "lc-city-selector": "^1.0.10"
+    "lc-city-selector": "^1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.5.1",
