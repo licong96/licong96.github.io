@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({12:[function(require,module,exports) {
+})({8:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],10:[function(require,module,exports) {
+},{}],7:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,13 +138,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":12}],5:[function(require,module,exports) {
+},{"./bundle-url":8}],4:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],6:[function(require,module,exports) {
+},{"_css_loader":7}],5:[function(require,module,exports) {
 module.exports = {
   "北京市": {
     "市辖区": ["东城区", "西城区", "朝阳区", "丰台区", "石景山区", "海淀区", "门头沟区", "房山区", "通州区", "顺义区", "昌平区", "大兴区", "怀柔区", "平谷区", "密云区", "延庆区"]
@@ -554,7 +554,7 @@ module.exports = {
   }
 }
 ;
-},{}],7:[function(require,module,exports) {
+},{}],6:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1587,7 +1587,7 @@ class LcCity {
   }
 }exports.default = LcCity;
 ;
-},{"./lc-city.css":5,"./data.json":6,"./util.js":7}],2:[function(require,module,exports) {
+},{"./lc-city.css":4,"./data.json":5,"./util.js":6}],2:[function(require,module,exports) {
 'use strict';
 
 var _lcCitySelector = require('lc-city-selector');
@@ -1623,7 +1623,7 @@ var defaultCity = new _lcCitySelector2.default({
 defaultInput.addEventListener('click', function () {
   defaultCity.show(defaultInput);
 });
-},{"lc-city-selector":3}],14:[function(require,module,exports) {
+},{"lc-city-selector":3}],9:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -1653,7 +1653,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50197' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56397' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -1792,5 +1792,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[14,2])
+},{}]},{},[9,2])
 //# sourceMappingURL=/lc-city-selector.e235a312.map
