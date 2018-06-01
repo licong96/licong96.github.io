@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>选择城市</title>
+  <script src="//at.alicdn.com/t/font_690242_wb1ne6el2nijm7vi.js"></script>
   <style>
     html, body {
       width: 100%;
@@ -43,15 +44,53 @@
       height: 46px;
       line-height: 46px;
       outline: none;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
     .place {
       color: #787878;
       font-style: normal;
     }
+    .icons {
+      width: 1em; height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+    .git-hub {
+      position: absolute;
+      left: 50%;
+      top: 30px;
+      margin-left: -44px;
+      width: 88px;
+      text-align: center;
+    }
+    .git-hub .icons {
+      font-size: 50px;
+      color: #333;
+    }
+    .git-hub .locat {
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+    }
   </style>
-</head>
+<link rel="stylesheet" href="./lc-city-selector.7edfe5f4.css"></head>
 <body>
 
+  <div class="git-hub">
+    <a href="https://github.com/licong96/lc-city-selector" target="_blank">
+      <svg class="icons" aria-hidden="true">
+        <use xlink:href="#icon-github"></use>
+      </svg>
+      <p class="locat">GitHub地址</p>
+    </a>
+  </div>
+  
   <div class="demo">
     <div class="test">
       <div class="text">
@@ -65,6 +104,6 @@
     </div>
   </div>
   
-  <script src="./index.js"></script>
+  <script src="./lc-city-selector.7edfe5f4.js"></script>
 </body>
 </html>
