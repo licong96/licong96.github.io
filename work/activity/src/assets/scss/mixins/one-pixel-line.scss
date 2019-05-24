@@ -1,0 +1,56 @@
+// 1px边框，上 100%，下 0%
+@mixin pixel-line-b ($cost: 0%, $color: #bbb) {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: $cost;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 0 0 1px $color;
+        transform-origin: 0 bottom;
+        transform: scaleY(.5) translateZ(0);
+    }
+
+    @media (min-resolution: 2dppx) {
+        &:after {
+            box-shadow: 0 0 0 .5px $color;
+        }
+    }
+
+    // 部分安卓手机不兼容
+    // @media (min-resolution: 3dppx) {
+    //     &:after {
+    //         box-shadow: 0 0 0 .333333px $color;
+    //     }
+    // }
+}
+
+// 1px边框，左 0%，右 100%
+@mixin pixel-line-l ($cost: 0%, $color: #bbb) {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: $cost;
+        top: 0;
+        height: 100%;
+        box-shadow: 0 0 0 1px $color;
+        transform-origin: 0 bottom;
+        transform: scaleX(.5) translateZ(0);
+    }
+
+    @media (min-resolution: 2dppx) {
+        &:after {
+            box-shadow: 0 0 0 .5px $color;
+        }
+    }
+
+    // @media (min-resolution: 3dppx) {
+    //     &:after {
+    //         box-shadow: 0 0 0 .333333px $color;
+    //     }
+    // }
+}

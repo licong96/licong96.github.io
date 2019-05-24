@@ -1,0 +1,9 @@
+@import "../variables/color.scss";
+@import "./home.scss";
+
+.loader-rotate {
+	display: inline-block;
+	font-size: 30px;
+	color: $color-theme;
+	animation: animation-rotate .5s linear infinite;
+}
