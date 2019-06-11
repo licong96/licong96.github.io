@@ -1,3 +1,99 @@
 
+	@import "../../../assets/scss/mixins/index.scss";
+
 	.home {
+		padding-bottom: 20px;
+		min-height: 100vh;
+		background-color: #f5f5f5;
+		user-select: none;
+		.cove {
+			overflow: hidden;
+			max-height: 210px;
+			background-color: #fff;
+		}
+		.cove__img {
+			max-width: 100%;
+			vertical-align: top;
+		}
+		.top {
+			overflow: hidden;
+			padding: 0 15px;
+			background-color: #fff;
+		}
+		.top__title {
+			margin-top: 15px;
+			font-size: 18px;
+			font-weight: 600;
+			color: #333;
+		}
+		.top__block {
+			margin-top: 15px;
+		}
+		.top__list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 50px;
+		}
+		.top__list + .top__list {
+			@include pixel-line-b(100%);
+		}
+		.top__name {
+			font-size: 14px;
+			color: #999;
+		}
+		.top__text {
+			font-size: 16px;
+			color: #666;
+		}
+		.top__btn {
+			font-size: 14px;
+			color: rgba(240, 61, 61, 1);
+			border: 1px solid rgba(240, 61, 61, 1);
+			padding: 4px 10px;
+			border-radius: 20px;
+		}
+
+		.poem {
+			margin-top: 15px;
+			padding: 15px;
+			background: #fff;
+			text-align: center;
+		}
+		.poem__title {
+			margin-top: 5px;
+			font-size: 16px;
+			font-weight: 500;
+			color: #333;
+		}
+		.poem__list {
+			margin-top: 10px;
+			font-size: 14px;
+			color: #999;
+		}
+
+		.detail {
+			padding: 20px 50px;
+			text-align: center;
+			background-color: #fff;
+		}
+		.detail__text {
+			margin-top: 10px;
+			font-size: 14px;
+			color: #666;
+			line-height: 1.5;
+		}
+		.detail__img {
+			max-width: 100%;
+		}
+
+		.join__btn {
+			margin-top: 30px;
+			padding: 8px 16px;
+			font-size: 14px;
+			color: #fff;
+			border-radius: 20px;
+			background-color: rgba(240, 61, 61, 1);
+			box-shadow: 0px 7px 12px 0px rgba(240,61,61,0.14);
+		}
 	}

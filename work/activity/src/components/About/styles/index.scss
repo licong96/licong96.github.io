@@ -1,0 +1,48 @@
+.about {
+  overflow: hidden;
+  margin-top: 15px;
+  background-color: #fff;
+  .about__title {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+  }
+  .my-wrap {
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto 0 auto;
+    width: 200px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    }
+    &:active {
+      .about__img {
+        filter: blur(0);
+      }
+    }
+  }
+  .about__img {
+    padding: 4px;
+    width: 100%;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+    filter: blur(3px);
+    transition: filter 2.5s;
+  }
+  .about__text {
+    padding: 8px 18px 15px 18px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+  }
+  .about__text-m {
+    margin-top: 10px;
+  }
+}
