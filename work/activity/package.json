@@ -74,7 +74,7 @@
     "css-selector-tokenizer": "^0.7.1",
     "has-ansi": "^3.0.0",
     "icss-utils": "^4.1.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "postcss-modules-extract-imports": "^2.0.0",
     "postcss-modules-local-by-default": "^3.0.1",
     "postcss-preset-env": "^6.6.0",
