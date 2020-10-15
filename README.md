@@ -1,4 +1,4 @@
-## 展示我的一些小作品
+## 展示一些小作品
 
 ### [用动画的形状展示年度回顾](https://licong96.github.io/annualReview2018/)
 ### [接住从天而降的福袋游戏](https://licong96.github.io/newYearBag/#/home)
