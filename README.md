@@ -1,4 +1,4 @@
-## 展示一些小作品
+## 展示一些作品
 
 * [用jsonp抓取数据来渲染的一个纯前端商城](https://licong96.github.io/work/women/)
 * [省-市-区三级联动城市选择器](https://licong96.github.io/work/lc-city-selector/index.html)
