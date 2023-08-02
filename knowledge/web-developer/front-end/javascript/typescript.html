@@ -2,7 +2,11 @@
 <html lang="zh-CN">
   <head>
     <link rel="icon" href="/knowledge/favicon.png"><title>TypeScript | knowledge</title><meta name="description" content="I know & I don`t know"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="VuePress 2.0.0-beta.22">
+<<<<<<< HEAD
     <link rel="preload" href="/knowledge/assets/js/runtime~app.79ad14cd.js" as="script"><link rel="preload" href="/knowledge/assets/css/styles.3cba2898.css" as="style"><link rel="preload" href="/knowledge/assets/js/4640.ac7f9124.js" as="script"><link rel="preload" href="/knowledge/assets/js/app.6f0e8032.js" as="script">
+=======
+    <link rel="preload" href="/knowledge/assets/js/runtime~app.ace1a728.js" as="script"><link rel="preload" href="/knowledge/assets/css/styles.3cba2898.css" as="style"><link rel="preload" href="/knowledge/assets/js/4640.ac7f9124.js" as="script"><link rel="preload" href="/knowledge/assets/js/app.f36e57cc.js" as="script">
+>>>>>>> ac76293c29a332c790e200e9f8687eb3e88c31b3
     <link rel="stylesheet" href="/knowledge/assets/css/styles.3cba2898.css">
   </head>
   <body>
@@ -20,6 +24,10 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="使用-避开检测" tabindex="-1"><a class="header-anchor" href="#使用-避开检测" aria-hidden="true">#</a> 使用<code>[]</code>避开检测</h3><p>往一个第三方实例的<code>prototype</code>属性上添加自定义的属性和方法</p><p>这样用会报错：</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>attribute <span class="token operator">=</span> <span class="token string">&#39;value&#39;</span>  <span class="token comment">// Property &#39;attribute&#39; does not exist on type &#39;Object&#39;.</span>
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>这样用可以通过：</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">[</span><span class="token string">&#39;attribute&#39;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&#39;value&#39;</span>
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><span class="meta-item-info">2023/1/28 16:25:34</span></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: licong23@xdf.cn">黎聪</span><!--[-->, <!--]--><!--]--><!--[--><span class="contributor" title="email: licong19961204@gmail.com">licong96</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"> ← <a href="/knowledge/web-developer/front-end/javascript/design-pattern.html" class="nav-link" aria-label="设计模式"><!--[--><!--]--> 设计模式 <!--[--><!--]--></a></span><span class="next"><a href="/knowledge/web-developer/front-end/javascript/js-built-in-objects.html" class="nav-link" aria-label="JavaScript 内置对象"><!--[--><!--]--> JavaScript 内置对象 <!--[--><!--]--></a> → </span></p></nav><!--[--><!--]--></main></div><!----><!--]--></div>
+<<<<<<< HEAD
     <script src="/knowledge/assets/js/runtime~app.79ad14cd.js" defer></script><script src="/knowledge/assets/js/4640.ac7f9124.js" defer></script><script src="/knowledge/assets/js/app.6f0e8032.js" defer></script>
+=======
+    <script src="/knowledge/assets/js/runtime~app.ace1a728.js" defer></script><script src="/knowledge/assets/js/4640.ac7f9124.js" defer></script><script src="/knowledge/assets/js/app.f36e57cc.js" defer></script>
+>>>>>>> ac76293c29a332c790e200e9f8687eb3e88c31b3
   </body>
 </html>
